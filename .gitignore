@@ -1,4 +1,12 @@
+# Ignore everything
 *
 
+# Allowed files
+!*/
 !.gitignore
+!.github/workflows/dockerimage.yaml
 !Dockerfile
+!action.yaml
+!README.md
+!entrypoint.sh
+

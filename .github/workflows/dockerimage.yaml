@@ -1,0 +1,19 @@
+name: Docker CMake + LaTeX Image
+
+env:
+  LATEST_TAG: 'darnor/cmake-latex-ci:latest'
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the latest Docker image
+      run: docker build . --file Dockerfile --tag $LATEST_TAG
+    - name: Push the latest Docker image
+      run: docker push $LATEST_TAG
