@@ -6,16 +6,18 @@ This action builds a LaTeX project configured to build with a `CMakeLists.txt` f
 
 ### `input_path`
 
-**Required** The path to project `CMakeLists.txt` file is in. Default `"."`.
+**Required** The path to the project `CMakeLists.txt` file. Default `"."`.
 
 ### `output_path`
 
-**Required** The path to build the documents in. Default `"build"`.
+**Required** The path to the build folder. Default `"build"`.
 
 ## Example usage
 
+```
 uses: Darnor/cmake-latex-ci@v0.1.0
 with:
-  input\_path: '.'
-  output\_path: 'build'
+  input_path: '.'
+  output_path: 'build'
+```
 
