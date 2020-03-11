@@ -2,9 +2,7 @@
 *
 
 # Allowed files
-!*/
 !.gitignore
-!.github/workflows/dockerimage.yaml
 !Dockerfile
 !action.yaml
 !README.md

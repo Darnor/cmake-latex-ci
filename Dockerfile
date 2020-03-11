@@ -11,3 +11,5 @@ RUN ["pacman", "-S", "--noconfirm", "ghostscript"]
 RUN ["pacman", "-S", "--noconfirm", "cmake", "make"]
 RUN ["pacman", "-Sc", "--noconfirm"]
 
+COPY ["entrypoint.sh", "/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
