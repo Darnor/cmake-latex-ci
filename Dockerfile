@@ -1,4 +1,4 @@
-FROM revy/cmake-latex:20200306
+FROM revy/cmake-latex:20200505
 
 LABEL authors="Hansruedi Patzen"
 
